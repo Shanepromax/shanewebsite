@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shanesite</title>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.min.css"> <!-- Your custom CSS file -->
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="#" class="logo"><i class="fas fa-camera"></i> No-Stress Shots<b> by Shane</b></a>
+        <nav>
+          <ul class="links">
+            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#galiri"><i class="fas fa-images"></i> Gallery</a></li>
+            <li><a href="#abawt"><i class="fas fa-user"></i> About Me</a></li>
+          
+            <li><i class="fas fa-user-shield"></i> Admin</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="content" id="home">
+      <div class="container">
+        <div class="split-screen">
+          <div class="info">
+            <h1>Looking For Inspiration?</h1>
+            <p>Stressed? Relax your eyes with my collection of casual everyday captures.</p>
+            <p>I can also provide if you have any specific photography needs, just reach out</p>
+            <a href="#abawt"><button>Talk to Shane</button></a>
+          </div>
+          <figure class="image">
+            <img src="img/lounge-girlpng.png" alt="Lounge Girl">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Gallery Section -->
+    <section class="additional-content">
+      <div class="container">
+        <div class="info">
+          <h1>Capturing life's beauty through photography.</h1>
+          <p> "Ease your mind as you immerse yourself in the serene charm of everyday moments beautifully captured within my collection. </p>
+          <p>Let these casual snapshots transport you to a realm of tranquil appreciation".</p>
+          
+        </div>
+        <div class="gallery" id="galiri">
+          <img src="img/sunset1.jpg" height="350" width="350">
+          <img src="img/sunset2.jpg" height="350" width="350">
+          <img src="img/sunset.jpg" height="350" width="350">
+          <img src="img/jomax.jpeg" height="350" width="350">
+          <img src="img/malatanog2.jpg" height="350" width="350">
+          <img src="img/hero.jpg" height="350" width="350">
+          <img src="img/malatanog1.jpg" height="350" width="350">
+          <img src="img/mountain.jpg" height="350" width="350">
+          <img src="img/kawa.jpg" height="350" width="350">
+          <img src="img/pot2.jpg" height="350" width="350">
+          <img src="img/pot5.jpg" height="350" width="350">
+          <img src="img/pot1.jpg" height="350" width="350">
+          <!-- Add other images as required -->
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <div class="split-screen">
+          <figure class="image">
+            <img src="img/mee.jpeg" alt="Shane Mallorca">
+          </figure>
+          <div class="info" id="abawt">
+            <h1>About Me</h1>
+            <p>Hey, I'm Shane Mallorca, 20, living in the stunning town of Don Salvador Benedicto in the Philippines. My passion? Capturing life's beauty through photography. From lush landscapes to the local culture, my lens tells the stories of my world. Join me in this visual journey, where every snapshot is a piece of my passion for photography. 📷✨.</p>
+            <p>I can also provide if you have any specific photography needs, just reach out</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" id="poter">
+      <p>You can contact me on:</p>
+      <div class="social-icons">
+        <a href="https://web.facebook.com/Shaneyyy23"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/shaneyyyours/"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/elonmusk"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+<script>
+  // Smooth scrolling function
+  document.addEventListener('DOMContentLoaded', function () {
+    const links = document.querySelectorAll('nav ul.links a');
+
+    for (const link of links) {
+      link.addEventListener('click', clickHandler);
+    }
+
+    function clickHandler(e) {
+      e.preventDefault();
+      const href = this.getAttribute('href');
+      const offsetTop = document.querySelector(href).offsetTop;
+
+      scroll({
+        top: offsetTop,
+        behavior: 'smooth'
+      });
+    }
+  });
+</script>
+</html>

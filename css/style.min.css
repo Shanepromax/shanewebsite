@@ -1,0 +1,244 @@
+/* Your CSS styles here */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgba(211, 183, 123, 0.605);
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1170px;
+}
+
+/* Reset and global styles */
+/* ... (your global styles remain the same) */
+
+/* Header */
+header {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #BE8A62;
+  padding: 0 20px; /* Added padding for space */
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  color: white;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'Caveat Brush', cursive;
+  text-decoration: none;
+  margin-right: 200px;
+}
+
+nav {
+  margin-left: auto; /* Pushes the navigation links to the right */
+}
+
+.links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.links li {
+  margin-left: 10px;
+}
+
+.links li a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+
+.links li:first-child {
+  margin-left: 0; /* Remove margin for the first link */
+}
+
+.links li:last-child {
+  margin-left: auto; /* Pushes the last link to the right */
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #FFF;
+  background: linear-gradient(to top, #9a6035, #c86fc9);
+  
+}
+
+/* Landing Page */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  border-bottom: 2px solid black;
+}
+
+.split-screen {
+  display: flex;
+}
+
+.info {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.image {
+  flex: 1;
+  text-align: center;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Specific styles for landing page content */
+.info h1 {
+  color: #5d5d5d;
+  font-size: 60px;
+  font-family: 'Caveat Brush', cursive;
+}
+.info {
+  margin-top: 100px;
+}
+
+.info p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 20px;
+  color: #5d5d5d;
+}
+
+.info button {
+  border: 0;
+  border-radius: 20px;
+  padding: 12px 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  color: #FFF;
+  background: linear-gradient(to top, #BE8A62, #c86fc9);
+  font-weight: bolder;
+}
+/* Your existing CSS styles here */
+
+.additional-content {
+  text-align: center; /* Center align content */
+  margin-top: 10px; /* Adjust top margin as needed */
+  padding-bottom: 20px;
+  border-bottom: 2px solid black;
+}
+
+.additional-content .info {
+  margin-bottom: 30px;
+}
+
+.additional-content .info h1 {
+  color: #333;
+  font-size: 46px;
+  font-weight: bold;
+}
+
+.additional-content .info p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.additional-content .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.additional-content .gallery img {
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+/* Your existing CSS styles */
+
+.about {
+  padding: 50px 0;
+  background-color: #e4d3af;
+  padding-bottom: 20px;
+  border-bottom: 2px solid black;
+}
+
+.about .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .split-screen {
+  display: flex;
+  flex-direction: row-reverse; /* Reverse the direction of the flex layout */
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.about .info {
+  flex: 1;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.about .image {
+  flex: 1;
+  text-align: center;
+}
+
+.about .image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Add border-radius for image aesthetics */
+}
+/* Your existing CSS styles */
+
+footer {
+  background-color: #333; /* Change background color as needed */
+  color: #fff; /* Change text color as needed */
+  padding: 20px 0;
+}
+
+footer .container {
+  max-width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer .social-icons a {
+  color: #fff;
+  margin-right: 10px; /* Adjust margin between icons as needed */
+}
+
+/* Modify icon size as needed */
+footer .social-icons a i {
+  font-size: 24px;
+}
